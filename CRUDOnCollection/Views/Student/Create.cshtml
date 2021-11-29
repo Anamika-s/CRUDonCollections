@@ -1,0 +1,25 @@
+﻿@model CRUDOnCollection.Models.Student
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+  @{using (Html.BeginForm())
+      {
+           <div>
+               @Html.LabelFor(m=>m.Name)
+               @Html.TextBoxFor(m=>m.Name)
+           </div>
+           <div>
+               @Html.LabelFor(m=>m.BatchCode)
+               @Html.TextBoxFor(m=>m.BatchCode)
+           </div>
+           <div>
+               @Html.LabelFor(x=>x.Marks)
+               @Html.TextBoxFor(x=>x.Marks)
+           </div>
+           <button type="submit"> Create </button>
+
+      }
+  }
+

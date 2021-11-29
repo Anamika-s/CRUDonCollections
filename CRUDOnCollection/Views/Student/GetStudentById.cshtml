@@ -1,0 +1,21 @@
+﻿@model CRUDOnCollection.Models.Student
+@{
+    ViewBag.Title = "GetStudentById";
+}
+
+
+<h2>GetStudentById</h2>
+ @{ if (ViewBag.msg != null)
+     {
+         @ViewBag.msg
+     }
+     else
+     {
+
+@Model.Id
+@Model.Name
+@Model.BatchCode
+@Model.Marks
+
+         }
+     }

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CRUDOnCollection.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+ @{  foreach (var student in Model)
+     {
+         @student.Id 
+         @student.Name
+         @student.BatchCode
+         @student.Marks <br />
+     }
+ }
